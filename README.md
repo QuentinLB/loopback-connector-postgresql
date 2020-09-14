@@ -726,7 +726,7 @@ export class Order extends Entity {
 
 Tips: 
 * Removing or updating the value of `foreignKeys` will be updated or delete or update the constraints in the db tables. If there is a reference to an object being deleted then the `DELETE` will fail. Likewise if there is a create with an invalid FK id then the `POST` will fail.
-* The `onDelete` property is optional, if set only `CASCADE` is properly supported right now.
+* The `onDelete` property is optional, only the following values are supported now: `CASCADE`.
 
 
 ### Auto-generated ids
